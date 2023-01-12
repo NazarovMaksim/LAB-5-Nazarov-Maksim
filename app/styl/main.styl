@@ -1,0 +1,159 @@
+bodystyl(bCol, size, type)
+   background-color bCol
+   font-size size
+   font-family type
+gap = 10px
+body
+   bodystyl(Gray, 16px, Arial)
+.main-block
+   width 80%
+   margin 40px auto
+   padding 10px 30px
+   background-color #E3E3E3
+   color black
+.menu
+   display flex
+   flex-direction row
+   justify-content space-around
+   width 100%
+   padding gap 0px
+   border solid grey 1px
+   &_item
+      //width 16%
+      overflow hidden
+      padding gap
+      font-weight bold
+      text-align center
+      &:hover
+         background-color #DCDCDC
+.page
+   background-color #DCDCDC
+a
+   text-decoration none
+   color black
+   &:hover
+      color #00BFFF
+p
+   text-indent 30px
+   text-align justify
+   line-height 2em
+   word-spacing 1.5em
+@media(max-width:600px)
+      body
+         font-size 14px
+      .main-block
+         width 90%
+      .menu
+         flex-wrap wrap
+         //&_item
+        //    width 50%
+
+.CSS
+   .block1
+      display flex
+      flex-direction column
+      padding 0px
+      img
+         float right
+         margin 0px 10px 10px 10px
+   .block2
+      display flex
+      //border solid thin black
+      flex-direction row
+      justify-content space-around
+      margin 10px
+      video
+         width 60%
+         //border solid thick grey
+   @media(max-width:600px)
+      .block1
+         text-align center
+         flex-direction column
+         &-item2
+            img
+               float none
+               width 100%
+               padding 0px
+               margin 12px 0px
+      .block2
+         flex-direction column
+         align-items center
+         video
+            width 100%
+            //border solid thick grey
+
+.Shrift
+   .block1
+      display flex
+      flex-direction row
+      width 100%
+      text-align center
+      margin 15px 0px
+      &-item
+         width 33.33%
+         //border solid thin red
+   img
+      width 90%
+   .block2
+      padding 23px
+   .block3
+      padding 23px
+   @media(max-width:600px)
+      .block1
+         flex-direction column
+         align-items center
+         &-item
+            width 100%
+            padding 0px
+
+.Text
+   .block1
+      display flex
+      flex-direction row
+      width 100%
+      text-align center
+      margin 15px 0px
+      &-item
+         width 33.33%
+   img
+      width 100%
+   .block2
+      display block
+      width 100%
+      padding 20px 20px
+   .block3
+      display block
+      width 100%
+      //border solid thin black
+      overflow hidden
+      &-item1
+         display inline-block
+         width 50%
+         float left
+         padding 0px 30px 10px 30px
+      //border solid thin black
+      &-item2
+         display inline-block
+         width 50%
+         padding 0px 30px 10px 30px
+   @media (max-width: 600px)
+      .block1
+         flex-direction column
+         align-items center
+         padding 0px
+         &-item
+            width 100%
+            padding 10px
+         &-item1
+            width 100%
+            padding 0px
+      .block3
+         display flex
+         flex-direction column
+         width 100%
+         &-item1
+            width 100%
+            padding 10px 20px
+         &-item2
+            width 100%
+            padding 10px 20px

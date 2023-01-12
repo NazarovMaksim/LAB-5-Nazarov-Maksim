@@ -1,0 +1,34 @@
+mixin MenuCreator(address)
+	if address == "CSS"
+		.menu
+			.menu_item.page
+				a(href="index.html") CSS
+			.menu_item Синтаксис CSS
+			.menu_item Вставка CSS
+			.menu_item
+				a(href="Stran.html") CSS текст
+			.menu_item
+				a(href="Shrift.html") CSS шрифт
+			.menu_item Блоки
+	if address == "CSS шрифт"
+		.menu
+			.menu_item
+				a(href="index.html") CSS
+			.menu_item Синтаксис CSS
+			.menu_item Вставка CSS
+			.menu_item
+				a(href="Stran.html") CSS текст
+			.menu_item.page
+				a(href="Shrift.html") CSS шрифт
+			.menu_item Блоки
+	if address == "CSS текст"
+		.menu
+			.menu_item
+				a(href="index.html") CSS
+			.menu_item Синтаксис CSS
+			.menu_item Вставка CSS
+			.menu_item.page
+				a(href="Stran.html") CSS текст
+			.menu_item
+				a(href="Shrift.html") CSS шрифт
+			.menu_item Блоки
